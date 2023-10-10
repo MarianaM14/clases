@@ -1,36 +1,38 @@
-<style>
-<style>
-  @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,200&display=swap');
-:root {
-    --primary:#dd946f;
-    --primary-hover:#cd7d7c;
-    --secondary:#efd0f8;
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root{
+    --primary: #dd946f;
+    --primary-hover: #cd7d7c;
+    --secondary: #efd0f8;
     --secondary-hover: #b8a1d9;
     --aura: #9265ca80;
-    --background:#261e5a;
+    --background: #261e5a;
 }
 *{
-    margin: 0;
+    margin:0;
     padding: 0;
     box-sizing: border-box;
     background-color: var(--background);
-    font-family:Mulish;
+    font-family: Mulish;
+
 }
 h1{
     color: var(--secondary);
 }
-.background {
+
+.background{
     content: "";
     position: absolute;
     height: 100vh;
     width: 100vw;
     display: grid;
     place-items: center;
-    background-image: url(https://article-imgs.scribdassets.com/7z6x6sjz9c9p1nq2/images/fileSJ3L9BF4.jpg);
+    background-image: url(https://img.freepik.com/free-photo/space-galaxy-background-generative-ai_191095-601.jpg);
     background-repeat: no-repeat;
-    background-size: auto;
-    opacity:0.5;
+    background-size:cover;
+    opacity: 0.5;
 }
+
 .centering{
     display: flex;
     justify-content: center;
@@ -38,6 +40,7 @@ h1{
     height: 100vh;
     width: 100vw;
 }
+
 .my_form{
     display: flex;
     flex-direction: column;
@@ -52,6 +55,7 @@ h1{
     width: 100%;
     padding: 32px;
 }
+
 .login{
     height: 80px;
     width: 80px;
@@ -62,13 +66,13 @@ h1{
 .login_welcome{
     display: flex;
     width: 100%;
-    justify-content: center;
+    justify-items: center;
     align-items: center;
     flex-direction: column;
     gap: 8px;
 }
 
-.my_form_button{
+.my_form_buttom{
     background-color: var(--primary);
     color: var(--background);
     white-space: nowrap;
@@ -86,18 +90,18 @@ h1{
     min-height: 50px;
     width: 100%;
     border-radius: 8px;
-    box-shadow: 0 5px 10px rgba(0,0,0115);
-    transition: al, 3s ease;
-    cursor:pointer;
-    
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    transition: all .3s ease;
+    cursor: pointer;
 }
+
 .text_field input{
     color:var(--secondary);
     font-size: 16px;
     font-weight: 500;
     max-width: 100%;
     width: 100%;
-    border: 1px;
+    border: 1px solid var(--secondary);
     height: 50px;
     letter-spacing: .03em;
     background-color: transparent;
@@ -106,6 +110,7 @@ h1{
     text-indent: 20px;
     margin-top: 8px;
 }
+
 .my_form_buttom:hover{
     background-color: var(--primary-hover);
 
@@ -175,11 +180,12 @@ h1{
 }
 
 .my_form a{
-    color:var(--primary);
+    color: var(--primary);
     font-weight: 800;
     text-decoration: none;
     font-size: 18px;
-    
 }
-.my_form_signup{
-    color: var(--primary);
+
+.my_form_signup a:hover{
+    color:var(--secondary-hover)
+}
